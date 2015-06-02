@@ -1,0 +1,27 @@
+extends ../includes/layout
+
+block main-content
+    .navbar.navbar-inverse.navbar-fixed-top.visible-xs
+        .container
+            .navbar-header
+                a.navbar-brand(href='/') American Axe
+            .navbar-collapse.collapse
+                ul.nav.navbar-nav
+                    li
+                        a(href='/') Home
+                    li
+                        a(href='/products/axes') Axes
+    //            div(ng-include="'/partials/account/navbar-login'")
+    .row
+        .col-md-2.hidden-xs
+            h3.text-center.border-bottom(style="width: 90%; margin: 0 auto;") American Axe
+            ul.nav.text-center
+                li
+                    a(href='/') Home
+                li
+                    a(href='/products/axes') Axes
+        .col-md-8
+            div(ng-view)
+
+    footer.container.text-center
+        p &copy 2015 American Axe

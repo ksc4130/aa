@@ -1,0 +1,9 @@
+.container
+    .row
+        .col-md-9
+            img.img-responsive(ng-src="{{product.imgs[0]}}")
+        .col-md-3
+            h1 {{product.title}}
+            p {{product.description}}
+            button.btn.btn-default.btn-block.btn-lg {{product.price | currency}}
+

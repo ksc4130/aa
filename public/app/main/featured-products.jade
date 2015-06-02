@@ -1,0 +1,6 @@
+.row
+    .col-md-4(ng-repeat="product in products")
+        h2.text-center {{product.title}}
+            small
+                small.text-muted &nbsp;{{product.price | currency}}
+        img.img-responsive.img-thumbnail(ng-src="{{product.imgs[0] || 'http://placehold.it/350x197'}}")
