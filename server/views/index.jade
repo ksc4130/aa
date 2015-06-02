@@ -1,7 +1,7 @@
 extends ../includes/layout
 
 block main-content
-    .navbar.navbar-inverse.navbar-fixed-top.visible-xs
+    .navbar.navbar-inverse.navbar-fixed-top.visible-xs.visible-sm
         .container
             .navbar-header
                 button.navbar-toggle.collapsed(data-toggle="collapse" data-target=".collapse")
@@ -18,7 +18,7 @@ block main-content
                         a(href='/products/axes') Axes
     //            div(ng-include="'/partials/account/navbar-login'")
     .row
-        .col-md-2.hidden-xs
+        .col-md-2.hidden-xs.hidden-sm
             h3.text-center.border-bottom(style="width: 90%; margin: 0 auto;") American Axe
             ul.nav.text-center
                 li
