@@ -4,12 +4,12 @@ var rootPath = path.normalize(__dirname + '/../../');
 module.exports = {
     development: {
         rootPath: rootPath,
-        db: 'mongodb://localhost/aa',
+        db: 'mongodb://localhost/american_axe',
         port: process.env.PORT || 3030
     },
     production: {
         rootPath: rootPath,
-        db: 'mongodb://ksc4130:meanstack@ds041032.mongolab.com:41032/well_hung_axe_co',
+        db: 'dbUser:Lala!!4130@localhost/american_axe',
         port: process.env.PORT || 80
     }
 };
