@@ -2,9 +2,9 @@ extends ../includes/layout
 
 block main-content
     .navbar.navbar-inverse.navbar-fixed-top.visible-xs.visible-sm
-        .container
+        .container-fluid
             .navbar-header
-                button.navbar-toggle.collapsed(ng-click="isCollapsed = !isCollapsed")
+                button.navbar-toggle.collapsed(type="button",ng-click="isCollapsed = !isCollapsed")
                     span.sr-only Toggle Navigation
                     span.icon-bar
                     span.icon-bar
