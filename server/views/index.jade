@@ -4,13 +4,13 @@ block main-content
     .navbar.navbar-inverse.navbar-fixed-top.visible-xs.visible-sm
         .container
             .navbar-header
-                button.navbar-toggle.collapsed(data-toggle="collapse" data-target=".collapse")
+                button.navbar-toggle.collapsed(ng-click="isCollapsed = !isCollapsed")
                     span.sr-only Toggle Navigation
                     span.icon-bar
                     span.icon-bar
                     span.icon-bar
                 a.navbar-brand(href='/') American Axe
-            .navbar-collapse.collapse
+            .navbar-collapse.collapse(collapse="!isCollapsed")
                 ul.nav.navbar-nav
                     li
                         a(href='/') Home
